@@ -33,3 +33,5 @@ game.get_players
 
 game.play_round until game.winner
 puts "#{game.winner} wins!"
+Leaderboard.create(name:game.winner,wins:1,losses:0)
+Leaderboard.create(name:)

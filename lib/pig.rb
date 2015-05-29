@@ -1,4 +1,6 @@
+require_relative '../db/setup'
 require_relative './player'
+require_relative './leaderboard'
 
 class Pig
   def initialize
@@ -7,7 +9,7 @@ class Pig
   end
 
   def get_players
-    puts "Getting player names. Type q when done."
+    puts "Getting player names. Type q when finished adding players."
     loop do
       print "Player #{@players.count + 1}, what is your name? > "
       input = gets.chomp
