@@ -27,6 +27,7 @@ class Pig
       gets
       take_turn p
     end
+
     remove_losing_players!
   end
 
